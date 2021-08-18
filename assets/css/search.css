@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:62.5%;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+.searchbox{
+    position:relative;
+}
+
+.searchText{
+    width: 0rem;
+    padding: 1rem;
+    border-radius: 5rem;
+    border: none;
+    outline:none;
+    transition: all 0.2s linear;
+}
+
+.searchText:focus {
+    outline: none;
+}
+
+.seaarchBtn{
+    width: 3rem;
+    height: 3rem;
+    background-color: #fff;
+    color: darkblue;
+    position:absolute;
+    left: 1rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.searchbox:hover > .searchText {
+    width: 25rem;
+    padding: 2rem;
+    box-shadow: 0 2rem 2rem -1.5rem rgba(0,0,0,0.5);
+}
+
+.searchbox: hover > .searchBtn {
+    background: #fff;
+    color: royalblue;
+}
